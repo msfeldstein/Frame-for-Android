@@ -15,7 +15,6 @@ import android.widget.ListView;
 
 import co.extrastrength.frame.BonjourHelper.BonjourDelegate;
 import co.extrastrength.frame.JSONFetcher.JSONCallback;
-import co.extrastrength.frame.dummy.DummyContent;
 
 /**
  * A list fragment representing a list of Prototypes. This fragment also

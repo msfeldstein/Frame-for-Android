@@ -33,7 +33,6 @@ public class BonjourHelper {
 
 	    // Instantiate a new DiscoveryListener
 	    mDiscoveryListener = new NsdManager.DiscoveryListener() {
-
 	        //  Called as soon as service discovery begins.
 	        @Override
 	        public void onDiscoveryStarted(String regType) {
