@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.NavUtils;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnLongClickListener;
 import android.view.ViewGroup;
@@ -48,7 +49,9 @@ public class PrototypeDetailFragment extends Fragment {
 		if (mUrl != null) {
 			WebView web = (WebView)rootView.findViewById(R.id.webView);
 			web.getSettings().setJavaScriptEnabled(true);
+			web.getSettings().setSupportZoom(false);
 			web.loadUrl(mUrl);
+			
 			web.setOnLongClickListener(new OnLongClickListener() {
 				
 				@Override
